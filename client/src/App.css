@@ -1,0 +1,1066 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.reactable-page-button {
+	background-color: #4CAF50; 
+  border: 1px solid #E0E0E0;
+  color: white;
+  padding: 7px 22px;
+  text-align: center;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: auto;
+  display: inline-block;
+	
+}
+
+.reactable-next-page {
+  background-color: #4CAF50; 
+  border: 2px solid #E0E0E0;
+  color: white;
+  padding: 7px 22px;
+  text-align: center;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: auto;
+  display: inline-block;	
+}
+
+.reactable-previous-page {
+  background-color: #4CAF50; 
+  border: 2px solid #E0E0E0;
+  color: white;
+  padding: 7px 22px;
+  text-align: center;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: auto;
+  display: inline-block;	
+}
+
+.reactable-filter-input {
+  background-color: white; 
+  border: 4px solid #E0E0E0;
+  color: black;
+  padding: 7px 22px;
+  text-align: center;
+  text-decoration: none;
+  margin: 4px 2px;
+  display: inline-block;	
+}
+
+header {
+    background-color: #FFFFFF;
+ /*   border-bottom:2px solid #e0e0e0; */
+    position: relative;
+    z-index: 10;
+}
+
+.table {
+	padding-top:50px;
+	width:100%;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: "HG明朝B", "Hiragino Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    line-height: 18px;
+	position: relative;
+	color:#6b6f72;
+	
+}
+
+#reactgooglegraph-1{
+	position:relative;
+	border: 2px solid green;
+	top:30px;
+}
+
+.reactable-filterer .button {
+  background-color: #4CAF50; 
+  border: 1px solid #E0E0E0;
+  color: white;
+  padding: 7px 22px;
+  text-align: center;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: auto;
+  display: block;
+}
+
+
+ form {
+	top:10px;
+	bottom:10px;
+	width:100%;
+	height:auto;
+	position: relative;
+	display: inline;
+	padding-top:20px;
+	
+ }
+ 
+ 
+ .form-control {
+	font-size: 22px;
+	font-weight: normal;
+	line-height: 24px;
+	font-family: "HG明朝B", "Hiragino Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	border: 2px solid #E0E0E0;
+	color: #6b6f72;
+    padding:4px;
+	display: inline;
+	background-color: white;	
+ }
+ 
+ .react-datepicker__input-controller{
+	width:210px; 
+ }
+ 
+select {
+	font-size: 22px;
+	font-weight: normal;
+	line-height: 24px;
+	font-family: "HG明朝B", "Hiragino Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;	
+	color: #6b6f72;    
+	display: inline;
+	background-color: white;	
+ }
+
+.srv-validation-message{
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 13px;
+	color:red;
+	font-family: "HG明朝B", "Hiragino Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	border: 1px dashed #E0E0E0;
+	padding:10px;
+	display:block;
+}
+
+
+CreatableSelect {
+	font-size: 22px;
+	font-weight: normal;
+	line-height: 24px;
+	font-family: "HG明朝B", "Hiragino Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	color: #6b6f72;
+    display: inline;
+	background-color: black;
+ }
+ 
+ .css-2b097c-container{
+	font-size: 22px;
+	font-weight: normal;
+	line-height: 24px;
+	font-family: "HG明朝B", "Hiragino Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	color: #6b6f72;
+    display: inline-block;
+	background-color: white;
+	width:220px;
+	top:10px;	
+ }
+ 
+form .button {
+	background-color: #4CAF50; 
+	border: 1px solid #E0E0E0;
+	border-radius: 12px;
+	color: white;
+	padding: 7px 22px;
+	text-align: center;
+	font-size: 19px;
+	text-decoration: none;
+	margin: 8px 0px;
+	cursor: pointer;
+	width: auto;
+	display: block;
+}
+
+#report-button{
+	position:relative;
+	display:block;
+	float:left;
+}
+
+.button {
+	-moz-box-shadow:inset 0px 1px 0px 0px #a4e271;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #a4e271;
+	box-shadow:inset 0px 1px 0px 0px #a4e271;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #89c403), color-stop(1, #77a809));
+	background:-moz-linear-gradient(top, #89c403 5%, #77a809 100%);
+	background:-webkit-linear-gradient(top, #89c403 5%, #77a809 100%);
+	background:-o-linear-gradient(top, #89c403 5%, #77a809 100%);
+	background:-ms-linear-gradient(top, #89c403 5%, #77a809 100%);
+	background:linear-gradient(to bottom, #89c403 5%, #77a809 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#89c403', endColorstr='#77a809',GradientType=0);
+	background-color:#89c403;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #74b807;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528009;
+}
+
+.button-report {
+	-moz-box-shadow:inset 0px 1px 0px 0px #a4e271;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #a4e271;
+	box-shadow:inset 0px 1px 0px 0px #a4e271;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #89c403), color-stop(1, #77a809));
+	background:-moz-linear-gradient(top, #89c403 5%, #77a809 100%);
+	background:-webkit-linear-gradient(top, #89c403 5%, #77a809 100%);
+	background:-o-linear-gradient(top, #89c403 5%, #77a809 100%);
+	background:-ms-linear-gradient(top, #89c403 5%, #77a809 100%);
+	background:linear-gradient(to bottom, #89c403 5%, #77a809 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#89c403', endColorstr='#77a809',GradientType=0);
+	background-color:#89c403;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #74b807;
+	display:inline;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528009;
+	margin-left:15px;
+	margin-bottom:15px;
+	margin-top: 15px;
+}
+
+.button:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #77a809), color-stop(1, #89c403));
+	background:-moz-linear-gradient(top, #77a809 5%, #89c403 100%);
+	background:-webkit-linear-gradient(top, #77a809 5%, #89c403 100%);
+	background:-o-linear-gradient(top, #77a809 5%, #89c403 100%);
+	background:-ms-linear-gradient(top, #77a809 5%, #89c403 100%);
+	background:linear-gradient(to bottom, #77a809 5%, #89c403 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#77a809', endColorstr='#89c403',GradientType=0);
+	background-color:#77a809;
+}
+.button:active {
+	position:relative;
+	top:1px;
+}
+
+.button1 {
+	
+	font-size: 19px; 
+	font-weight: bold; 
+	border-radius: 12px;
+}
+ 
+.button2 {
+	font-size: 19px; 
+	font-weight: bold; 
+	border-radius: 12px;
+	display: inline;	
+}
+
+.button3 {
+    cursor:pointer;
+	color:#1fb326;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 12px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #f9faf7;
+    width:50px;
+	font-weight: bold; 
+	border-radius: 5px;
+	display: inline-block;
+}
+ 
+tr, th, td {
+	border: 2px solid green;
+	table-layout: auto; 
+	padding: 10px;	
+}
+th {
+	text-transform: uppercase;
+	font-weight:bold;
+	color:black;
+}
+
+@media
+only screen and (max-width: 800px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+  th {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  tr { border: 1px solid black; }
+  td {
+    border: none;
+    border-bottom: 1px solid black;
+    position: relative;
+    padding-left: 200px;
+    margin-left: 150px;
+  }
+   td:before {
+    position: absolute;
+    top: 12px;
+    left: 6px;
+    width: 200px;
+    padding-right: 40px;
+    white-space: nowrap;
+    margin-left: -150px;
+  }
+  td:nth-of-type(1):before { content: "barcode"; }
+  td:nth-of-type(2):before { content: "defect_name"; }
+  td:nth-of-type(3):before { content: "defect_code"; }
+  td:nth-of-type(4):before { content: "board_name";}
+  td:nth-of-type(5):before { content: "defect_cause";}
+  td:nth-of-type(6):before { content: "repaired";}
+  td:nth-of-type(7):before { content: "repair_date";}
+  td:nth-of-type(8):before { content: "part_ref";}
+  td:nth-of-type(9):before { content: "comment";}
+  td:nth-of-type(10):before { content: "createdAt";}
+  td:nth-of-type(11):before { content: "updatedAt";} 
+} 
+
+/* base styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #FFFFFF;;
+    color: #7F7F7F;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    line-height: 17px;
+}
+img {
+    border: 0 none;
+}
+table{
+	position:relative;
+	top:5px;
+	display:block;
+}
+
+.container {
+    margin:0px auto 0;
+    position:relative;
+    text-align:left;
+    width:80%;
+    padding-left: 0px;
+    padding-right: 20px;
+	
+}
+
+.loading {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .loading .loadingIcon {
+    -webkit-transform: rotate(20deg);
+        -ms-transform: rotate(20deg);
+            transform: rotate(20deg);
+    -webkit-animation: rotateLoading 1.5s ease-in-out infinite;
+            animation: rotateLoading 1.5s ease-in-out infinite; }
+@-webkit-keyframes rotateLoading {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+@keyframes rotateLoading {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+ 
+
+
+/* header section */
+
+header {
+    background-color: #FFFFFF;
+ /*   border-bottom:2px solid #e0e0e0; */
+    position: relative;
+    z-index: 1000;
+}
+.top_head {
+    overflow: hidden;
+    position: relative;
+}
+.top_head .logo {
+    float: left;
+    padding: 0px 0 10px 0px;
+}
+.top_head .logo img{
+    float: left;
+    max-width:80%;
+    height:auto;
+	position: relative;
+}
+
+/*navigation menu*/
+nav {
+    background-color:white;
+    overflow: hidden;
+	border: 4px solid #E0E0E0;
+    width:auto;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+/* Add a gray right border to all list items, except the last item (last-child) */
+nav ul li {
+  float:left;
+  border-right: 2px solid #bbb;
+}
+nav ul li a {
+    color: black;
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+	font-family: "HG明朝B", "Hiragino Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    height: 20px;
+    line-height: 18px;
+    padding: 10px 15px 6px 15px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+	text-shadow: 2px 2px #E0E0E0;    
+}
+nav ul li a:hover {
+    background: none repeat scroll 0 0 white;
+	border: 2px solid ##f1f1f1;	
+}
+nav ul li:active {
+    background: none repeat scroll 0 0 #f3f3f3;
+	border: 2px solid ##f1f1f1;	
+}
+nav .active a{ background: none repeat scroll 0 0 #f3f3f3; }
+nav .active a:firstchild{ background: none repeat scroll 0 0 #f3f3f3; }
+nav ul li .dropbtn {
+	color: #FFFFFF;
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+	font-family: "HG明朝B", "Hiragino Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    height: 20px;
+    line-height: 18px;
+    padding: 10px 15px 6px 15px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+	text-shadow: 2px 2px black;
+}
+nav ul li.dropdown {
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+	font-family: "HG明朝B", "Hiragino Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    height: 25px;
+    line-height: 20px;
+    padding: 10px 15px 6px 15px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;	
+
+}
+.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+  }
+
+h3 {
+  font: 20px/30px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  color: black;
+  }
+
+h4 {
+    background: -moz-linear-gradient(#ffffff, #F6F6F6); /* FF 3.6+ */
+    background: -ms-linear-gradient(#ffffff, #F6F6F6); /* IE10 */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #F6F6F6)); /* Safari 4+, Chrome 2+ */
+    background: -webkit-linear-gradient(#ffffff, #F6F6F6); /* Safari 5.1+, Chrome 10+ */
+    background: -o-linear-gradient(#ffffff, #F6F6F6); /* Opera 11.10 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#F6F6F6'); /* IE6 & IE7 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#F6F6F6')"; /* IE8+ */
+    background: linear-gradient(#ffffff, #F6F6F6); /* the standard */
+    border-bottom: 1px solid #E0E0E0;
+    color: lightgray;
+    font-size: 16px;
+    font-weight: strong;
+    line-height: 16px;
+    padding: 15px 0px 15px 0px;
+	white-space:pre-line;
+	position:relative;
+	display:block;
+}
+
+.arrow {
+    display: inline-block;
+	position:relative;
+	left:50%;
+	bottom:50px;
+	top:10px;
+}
+
+.arrow a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+
+}
+
+.arrow  a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.next {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+.hiddenDiv {
+	background-color: #FFFFFF;
+    float: left;
+	position:relative;
+	height: 400px;
+	width:auto;
+    
+}
+iframe {
+	max-width:560px;
+	max-height:315px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	position:inline;
+}
+
+/*Main section*/
+
+#content{
+	position:relative;
+	width:100%;
+	height:auto;
+	display:block;
+}
+
+/* footer section */
+footer {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-bottom: 1px solid #E0E0E0;
+	position: relative;
+	display:block;
+	width:100%;
+	height:auto;
+	float:left;
+	margin-top:20px;
+
+}
+footer #privacy {
+    color: #9B9B9B;
+    font-size: 12px;
+    line-height: 20px;
+    overflow: hidden;
+}
+footer a{
+    color: #9B9B9B;
+    text-decoration: none;
+}
+.pvtUi {
+    color: #2a3f5f;
+    font-family: Verdana;
+    border-collapse: collapse;
+}
+.pvtUi select {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+}
+
+.pvtUi td.pvtOutput {
+    vertical-align: top;
+	width:100%;
+	height:auto;
+}
+
+table{
+	position: relative;
+	padding-top:0px;	
+}
+
+table.pvtTable {
+    font-size: 8pt;
+    text-align: left;
+    border-collapse: collapse;
+    margin-top: 3px;
+    margin-left: 3px;
+    font-family: Verdana;
+	
+
+}
+table.pvtTable thead tr th,
+table.pvtTable tbody tr th {
+    background-color: #ebf0f8;
+    border: 1px solid #c8d4e3;
+    font-size: 8pt;
+    padding: 5px;
+	
+}
+
+table.pvtTable .pvtColLabel {
+    text-align: center;
+}
+table.pvtTable .pvtTotalLabel {
+    text-align: right;
+}
+
+table.pvtTable tbody tr td {
+    color: #2a3f5f;
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid #c8d4e3;
+    vertical-align: top;
+    text-align: right;
+
+}
+
+.pvtTotal,
+.pvtGrandTotal {
+    font-weight: bold;
+}
+
+.pvtRowOrder,
+.pvtColOrder {
+    cursor: pointer;
+    width: 15px;
+    margin-left: 5px;
+    display: inline-block;
+    user-select: none;
+    text-decoration: none !important;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+}
+
+.pvtAxisContainer,
+.pvtVals {
+    border: 1px solid #a2b1c6;
+    background: #f2f5fa;
+    padding: 5px;
+    min-width: 20px;
+    min-height: 20px;
+}
+
+.pvtRenderers {
+    padding-left: 5px;
+    user-select: none;
+}
+
+.pvtDropdown {
+    display: inline-block;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+    margin: 3px;
+	z-index: 0;
+}
+
+.pvtDropdownIcon {
+    float: right;
+    color: #a2b1c6;
+}
+.pvtDropdownCurrent {
+    text-align: left;
+    border: 1px solid #a2b1c6;
+    border-radius: 4px;
+    display: inline-block;
+    position: relative;
+    width: 210px;
+    box-sizing: border-box;
+    background: white;
+}
+
+.pvtDropdownCurrentOpen {
+    border-radius: 4px 4px 0 0;
+}
+
+.pvtDropdownMenu {
+    background: white;
+    position: absolute;
+    width: 100%;
+    margin-top: -1px;
+    border-radius: 0 0 4px 4px;
+    border: 1px solid #a2b1c6;
+    border-top: 1px solid #dfe8f3;
+    box-sizing: border-box;
+}
+
+.pvtDropdownValue {
+    padding: 2px 5px;
+    font-size: 12px;
+    text-align: left;
+}
+.pvtDropdownActiveValue {
+    background: #ebf0f8;
+}
+
+.pvtVals {
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: top;
+    padding-bottom: 12px;
+}
+
+.pvtRows {
+    height: 35px;
+}
+
+.pvtAxisContainer li {
+    padding: 8px 6px;
+    list-style-type: none;
+    cursor: move;
+}
+.pvtAxisContainer li.pvtPlaceholder {
+    -webkit-border-radius: 5px;
+    padding: 3px 15px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px dashed #a2b1c6;
+}
+.pvtAxisContainer li.pvtPlaceholder span.pvtAttr {
+    display: none;
+}
+
+.pvtAxisContainer li span.pvtAttr {
+    -webkit-text-size-adjust: 100%;
+    background: #f3f6fa;
+    border: 1px solid #c8d4e3;
+    padding: 2px 5px;
+    white-space: nowrap;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+}
+
+.pvtTriangle {
+    cursor: pointer;
+    color: #506784;
+}
+
+.pvtHorizList li {
+    display: inline-block;
+}
+.pvtVertList {
+    vertical-align: top;
+}
+
+.pvtFilteredAttribute {
+    font-style: italic;
+}
+
+.sortable-chosen .pvtFilterBox {
+    display: none !important;
+}
+
+.pvtCloseX {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none !important;
+}
+
+.pvtDragHandle {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    font-size: 18px;
+    cursor: move;
+    color: #a2b1c6;
+}
+
+.pvtButton {
+    color: #506784;
+    border-radius: 5px;
+    padding: 3px 6px;
+    background: #f2f5fa;
+    border: 1px solid;
+    border-color: #c8d4e3;
+    font-size: 14px;
+    margin: 3px;
+    transition: 0.34s all cubic-bezier(0.19, 1, 0.22, 1);
+    text-decoration: none !important;
+}
+
+.pvtButton:hover {
+    background: #e2e8f0;
+    border-color: #a2b1c6;
+}
+
+.pvtButton:active {
+    background: #d1dae6;
+}
+
+.pvtFilterBox input {
+    border: 1px solid #c8d4e3;
+    border-radius: 5px;
+    color: #506784;
+    padding: 0 3px;
+    font-size: 14px;
+}
+
+.pvtFilterBox input:focus {
+    border-color: #119dff;
+    outline: none;
+}
+
+.pvtFilterBox {
+    z-index: 3;
+    width: 300px;
+    border: 1px solid #506784;
+    background-color: #fff;
+    position: absolute;
+    text-align: center;
+    user-select: none;
+    min-height: 100px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+}
+
+.pvtFilterBox h4 {
+    margin: 15px;
+}
+.pvtFilterBox p {
+    margin: 10px auto;
+}
+.pvtFilterBox button {
+    color: #2a3f5f;
+}
+.pvtFilterBox input[type='text'] {
+    width: 230px;
+    color: #2a3f5f;
+    margin-bottom: 5px;
+}
+
+.pvtCheckContainer {
+    text-align: left;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow-y: scroll;
+    width: 100%;
+    max-height: 30vh;
+    border-top: 1px solid #dfe8f3;
+}
+
+.pvtCheckContainer p {
+    margin: 0;
+    margin-bottom: 1px;
+    padding: 3px;
+    cursor: default;
+}
+
+.pvtCheckContainer p.selected {
+    background: #ebf0f8;
+}
+
+.pvtOnly {
+    display: none;
+    width: 35px;
+    float: left;
+    font-size: 12px;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+.pvtOnlySpacer {
+    display: block;
+    width: 35px;
+    float: left;
+}
+
+.pvtCheckContainer p:hover .pvtOnly {
+    display: block;
+}
+.pvtCheckContainer p:hover .pvtOnlySpacer {
+    display: none;
+}
+
+.pvtRendererArea {
+    padding: 5px;
+}
+
+.col-md-offset-3 {
+	width:40%;
+	height:100px;
+	position:relative;
+	display:inline-table;
+	font-size: 12px;
+	padding:10px 5px 15px 5px;
+	float:left;
+}
+
+.text-center {
+	width: 40%;
+    height: 100px;
+	position:relative;
+	display:inline-table;
+	font-size: 12px;
+	padding:10px 5px 15px 5px;
+	float:left;	
+}
+
+.dropzone {
+		width:200px;
+		height: 100px;
+        border: 2px dashed green;
+        cursor: pointer;
+		position:relative;
+		display:inline-table;
+		padding:50px 5px 15px 5px;
+		text-align:center;		
+}
+
+textarea {
+		width:200px;
+		height: 100px;
+        border: 2px solid lightgray;
+       	position:relative;		
+		font-size: 12px;
+		display:inline-table;
+		padding:50px 5px 15px 5px;
+		text-align:center;
+		overflow:hidden;
+}
+
+.row{
+	float:left;
+	position:relative;
+}
+	  
+.dropzoneActive {
+        border: 2px dashed green ;
+}
+.dropzoneReject {
+        border: 2px dashed red ;
+}
+
+.report-date{
+	width:150px;
+	height: 20px;
+    border: 2px solid lightgray;
+	color: darkgray;
+    display: block;
+    font-size: 16px;
+    font-weight: normal;
+	font-family: "HG明朝B", "Hiragino Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    height: 14px;
+    line-height: 14px;
+    padding: 10px 15px 6px 15px;
+    position: relative;
+	z-index: 2;
+	top:10px;
+	float:right;
+}
+
+.react-datepicker-popper {
+	z-index: 2 !important;
+}
