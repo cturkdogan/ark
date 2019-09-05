@@ -1,2 +1,1 @@
-# ark
-Project Ark
+# Ark
