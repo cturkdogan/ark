@@ -1,0 +1,196 @@
+健康状態:けんこうじょうたい: health condition
+手術:しゅじゅつ:surgery
+外出する:がいしゅつする： going out
+雇用形態:こようけいたい: employment status
+勤務地:きんむち:work location
+業務内容:ぎょうむないよう: business content
+必要となるスキル/経験:ひつようとなるスキル/けいけん:Required skills/experince
+求める人物像:もとめるじんぶつぞう:Desired Personality
+求める語学力:もとめるごがくりょく:Language proficiency
+履歴書:りれきしょ:Resume
+職務経歴書：しょくむけいれきしょ：detailed CV
+地下鉄:ちかてつ：subway/underground
+学習:がくしゅう：tutorial
+目的:もくてき：goal
+単元:たんげん:teaching unit
+完了する:かんりょうする:completion,to complete
+概要:がいよう:summary
+主要:しゅよう:major,main
+機能:きのう:feature
+最新:さいしん:latest
+改善する:かいぜんする:continious improvement
+環境:かんきょう:environment
+構想:こうそう:conception
+その結果:そのけっか:as a result
+自然:しぜん:natural
+利用者:りょうしゃ:user
+金星:きんせき:venus
+明星:みょうじょう:lucifer
+予備的
+幸い:さいわい:lucky
+惑星:わくせい:planet
+結局:けっきょく:eventually
+有給休暇:ゆうきゅうきゅうか:paid salary
+給料:きゅうりょう:salary
+更新:こうしん:update
+消火器:しょうかき:fire extinguisher
+調達:ちょうたつ:procurement, tedarik
+有給休暇:ゆうきゅうきゅうか:paid vacation
+休憩:きゅうけい：rest
+作業者:さぎょうしゃ：worker, manufacturer
+上記:じょうき:above
+企業内:きぎょう:enterprize
+前職:ぜんしょく:previous job
+技術者:ぎじゅつしゃ:expert
+出庫依頼:しゅっこいらい:delivery request
+次回:じかい:next time/occasion
+承知する：しょうちする:to acknowledge/consent (anlasildi)
+完了:かんりょう：complete (popup a yaziyoruz sanirim)
+上記:じょうき:as above
+基板:きばん：board
+償却:しょうきゃく：scrap
+剥がれ:はがれ:peeled(board defect)
+回路:かいろ：circuit
+各:かく：each
+信号:しんごう：signal
+経路:けいろ：route
+箇所:かしょ：point
+不具合:ふぐあい：defect
+研究:けんきゅう：research
+調べる：しらべる：investigate
+修理する:しゅうりする:repair
+切り分け:きりわけ：isolate
+記述します:きじゅつします：describe
+主要:しゅよう：main
+全:ぜん：All,whole
+不良:ふりょう：defective
+ながら:while (end of verb)
+図:ず：diagram
+詳細:しょうさい：in detail
+起動:きどう：start-up
+動作:どうさ：act
+後:あと/ご：after
+点灯:てんとう：lit
+点滅:てんめつ：blink
+白：しろ：white
+赤:あか：red
+橙:だいだ：orange
+一瞬:いっしゅん：momentarily
+電源:でんげん：power supply
+画:が：picture
+出カ：しゅつりょく：output
+入力:にゅうりょく：input
+原因:げんいん：cause
+交換:こうかん：replace
+途切れる:とぎれる：interrupted/lost
+参考:さんこう：reference
+端子:たんし：connector
+差動:さどう：differential
+良品：りょうひん：good product
+比較:ひかく:compare
+波形:はけい：wave
+固定:こてい：fixed
+接続:せつぞく：connection
+切換：きりかえ：switch
+同期:どうき：sync
+高速:こうそく：high speed
+乱れる:みだれる：disturbed
+及び:および：as well as
+配線:はいせん：wiring
+欠品:けつひん：shortage
+範囲:はんい：range
+本体:ほんたい：body,substance
+壊れる:こわれる：to break,broken
+申請用紙:しんせいようし：request form
+使用:しよう：use
+情報:じょうほう：information
+現在:げんざい：currently
+秒間:びょうかん:second
+登録:とうろく：registration
+無効にする:むこうにする:disable
+有効にする:ゆうこうにする:enable
+予想:よそう:predict
+回路図:かろず：circuit diagram
+破損:はそん：damage
+確認する：かくにんする：verify, confirm
+治具:じぐ:jig
+正常:せいじょう：normal
+電圧:でなつ：voltage
+測定値:そくていち：measured value
+抵抗値:ていこうち：resistance value
+脱落日:だつらくび: defect date
+修理日:しゅうりび:repair date
+関連する:かんれんする：related
+硬い:かたい：hard
+柔らかい:やわらかい：soft
+運転面鏡試験:運転面鏡試験：driving licence test
+平針:ひらばり：Hirabari
+以上:いじょう:more than
+未満:みまん:less than
+禁止する:きんしする:to ban
+州:しゅう:State
+容量:ようりょう:capacity
+保存する：ほぞんする:to save
+半導体:はんどうたい:semiconductor
+責別;せめべつ:responsibility
+情報通信技術:じょうほうつうしんぎじゅつ:ICT
+取り消し:とりけし:cancel
+失敗:しっぱい:failure
+上げる:あげる:increase
+下がる:さがる:decrease
+急落する:きゅうらくする:sharp fall
+情報:じょうほう:information(thanks for info)
+機種：きしゅ:model
+面:めん:surface
+予備的:よびてき:preliminery
+分析:ぶんせき：analysis
+解除:かいじょ:release, cancel
+件数:けんすう:a number (of things)
+末修理件数:すえしゅうりけんすう:number of waiting repairs
+修理済み件数:修理済み件数: number of repaired
+破損交換:はそんこうかん:damaged replace
+検出:けんしゅつ:detect, sense
+在庫:ざいこ:inventory
+続報:ぞくほう:follow-up
+対象:たいしょう:target
+確保:かくほ:guarantee, secure
+領域:りょういき:area
+軸:じく:axis
+不等号:ふとうごう:inequality sign
+該当:がいとう:applicable, corresponding
+進数:しんすう:base (n base)
+桁:けた:digit
+値:あたい:value
+装置:そうち:equipment, apparatus
+計算:けいさん:calculation
+終了:しゅうりょう:completion, end
+結果:けっか:result
+全体:ぜんたい:whole, entirety
+公式:こうしき:formula
+確率:かくりつ:probability
+くじ:lottery
+数:かず: number (as amount)
+表現:ひょうげん: expression, presentation
+組合せ:くみあわせ:combination
+代金:だいきん:cost,charging
+分割払い:ぶんかつばらい:taksit
+購入:こうにゅう:purchase
+支払い:しはらい:payment
+均等に:きんとうに:equally
+額:がく:amount (of money)
+仮定:かてい:assumption
+それぞれ:each one, respectively
+均等に:きんとうに:equally
+契約:けいやく:contract, agreement
+総額:そうがく:total amount
+直前:ちょくぜん:just before
+利息:りそく:faiz, interest
+割合:わりあい:ratio
+比率:ひりつ:percentage
+水溶液:すいようえき:aqueous solution
+図形:ずけい:figure
+面積:めんせき:area
+見込:みこみ:forecast
+今後:こんご:from now on
+改修:かいしゅう:improvement, renovation
+

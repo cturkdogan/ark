@@ -1,0 +1,129 @@
+The most important thing you should know is that the RaspberryPi is a strange beast where the ARM CPU is the not main CPU - it's only a co-processor to the VideoCore GPU. When the RaspberryPi starts, a GPU blob is read from the SD card to the L2 cache and executed. This code then brings up all the important peripherals (RAM, clocks etc) and starts the ARM CPU. Then the 2nd stage bootloader or some operating system itself can be run on ARM CPU.
+
+GPU blob is not only a bootloader. It's actually an operating system (Video Core OS) by itself. Some important elements of the system are not directly accessible by ARM CPU and it has to communicate with GPU (using mailbox messaging system) to use them. There is partial documentation about this available. Now Video Core OS (VCOS) is extended from time to time by Broadcom employees to enable features needed by Linux kernel, RISC OS or sometimes even some hobby OSes. There is no good documentation about this however, you would have to dig in the RaspberryPi forum, github and possibly other places to find information about this. But it's there.. somewhere. And there are a few people who write their own bare metal code or even OSes on the RaspberryPi to help you out. And of course a lot of open source code - RasbperryPi's Linux kernel for example.
+
+VideoCore is proprietary, there is no official documentation and development tools. So unless you want to put a lot of effort, you can't rewrite VCOS with your own code. There is, however, some effort to reverse engineer the Video Core, you can find some information here.
+
+Another problem is that the USB stack by Synopsys is proprietary and again there is no documentation for it and it seems that even with documentation it's hard to implement it reliably. But again, the code is available (Linux kernel, u-boot, CSUD). Using advanced graphics capabilities of Video Core may also be hard - there is some open source code for the graphics libraries, but it's only for the ARM side.
+
+That being said, it was possible to make the RISC OS port from the information available (it's not entirely clear to me if they were using only publicly accessible information, though), some people are rewriting (independently from Broadcom) the Linux kernel for mainline, there is a FreeBSD port, 'U-boot` and others. So it is definitively possible to write your own OS. It's just not as easy as it might possibly be.
+
+Your goals
+Number 1
+As far as I know, there is no way that the SoC could start in another way than the one described. So first stage bootloader has to be on SD card. And it has to be a GPU binary, not an ARM binary which is another problem. And there is no on board flash in the RaspberryPi which is also a problem.
+
+Number 2
+The main problem is that there is no on-board flash on RaspberryPi. You could add one and it could be activated in your bootloader (which would have to be the 2nd stage bootloader already). Writing a USB driver could be problematic, however.
+
+Number 3, 4, 5
+This shouldn't be much of a problem. Most of the peripherals (at least those accessible to the ARM) are documented here. Existing bootloader makes this even easier since you get your SoC completely configured. You can look here and here for some code and documentation.
+
+Alternatives
+I don't know any other board as good as RaspberryPi so it's hard to recommend something but you may take a look at some mature projects like OMAP based Beagleboard/Beaglebone/Pandaboard or you can follow the development of some new boards like the Allwinner based Cubieboard or PCduino. It all depends on what exactly you want to accomplish.
+
+Activating the debug
+There are two different ways that bootcode.bin can be used and therefore two different ways that it can be debugged. The two methods are characterised as follows:
+
+Read bootcode.bin from source (SD card, USB MSD or via ethernet) then read start.elf, kernel.img from the same source.
+Read bootcode.bin from SD card (specifically with no config.txt or start.elf on the SD card) then try to boot from USB MSD or ethernet to find the other files (start.elf, config.txt, kernel.img etc)
+The reason we use 2) above is when we have problems with the standard boot mode and require some debug to get any further (i.e. why can't it read from the USB MSD or network)
+
+To enable debug output in 1) above you need to add uart_2ndstage=1 to config.txt
+
+To enable debug output in 2) above you need to add a file named UART to the filesystem alongside the bootcode.bin file
+
+
+
+差動信号しゅつ
+
+Booting Linux
+
+Jan 19 05:48:27 raspberrypi kernel: [   84.495298] usb 1-1.4: USB disconnect, device number 7
+Jan 19 05:48:29 raspberrypi systemd[1]: Started Turns off Raspberry Pi display backlight on shutdown/reboot
+
+Jan 19 05:47:00 raspberrypi kernel: [   80.971214]  sda: sda1
+Jan 19 05:47:00 raspberrypi kernel: [   80.973354] sd 1:0:0:0: [sda] Attached SCSI removable disk
+Jan 19 05:47:01 raspberrypi org.gtk.Private.UDisks2VolumeMonitor[716]: index_parse.c:191: indx_parse(): error opening /media/root/SONY_8GT1/BDMV/index.bdmv
+Jan 19 05:47:01 raspberrypi org.gtk.Private.UDisks2VolumeMonitor[716]: index_parse.c:191: indx_parse(): error opening /media/root/SONY_8GT1/BDMV/BACKUP/index.bdmv
+Jan 19 05:47:01 raspberrypi kernel: [   81.308909] FAT-fs (sda1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+Jan 19 05:47:01 raspberrypi udisksd[1021]: Mounted /dev/sda1 at /media/root/SONY_8GT1 on behalf of uid 0
+Jan 19 05:47:05 raspberrypi udisksd[1021]: Cleaning up mount point /media/root/SONY_8GT1 (device 8:1 is not mounted)
+Jan 19 05:47:05 raspberrypi udisksd[1021]: Unmounted /dev/sda1 on behalf of uid 0
+Jan 19 05:47:07 raspberrypi kernel: [   87.241047] usb 1-1.4: USB disconnect, device number 7
+Jan 19 05:47:09 raspberrypi systemd[1]: Started Turns off Raspberry Pi display backlight on shutdown/reboot.
+Jan 19 05:47:09 raspberrypi systemd[1]: Started Synchronise Hardware Clock to System Clock.
+Jan 19 05:47:09 raspberrypi systemd[1]: Stopping Session c2 of user root.
+
+Jan 19 05:43:38 raspberrypi kernel: [   40.464197] cfg80211:   (57240000 KHz - 63720000 KHz @ 2160000 KHz), (N/A, 0 mBm), (N/A)
+
+Jan 19 05:45:30 raspberrypi kernel: [  152.677594] usb 1-1.5: new high-speed USB device number 6 using dwc_otg
+
+
+Jan 19 06:09:28 raspberrypi org.gtk.Private.AfcVolumeMonitor[746]: Volume monitor alive
+Jan 19 06:09:28 raspberrypi rsyslogd-2007: action 'action 17' suspended, next retry is Fri Jan 19 06:09:58 2018 [try http://www.rsyslog.com/e/2007 ]
+Jan 19 06:09:29 raspberrypi kernel: [   31.635615] FAT-fs (sda1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+Jan 19 06:09:29 raspberrypi udisksd[973]: Mounted /dev/sda1 at /media/root/SONY_8GT1 on behalf of uid 0
+Jan 19 06:09:29 raspberrypi org.gtk.Private.UDisks2VolumeMonitor[746]: index_parse.c:191: indx_parse(): error opening /media/root/SONY_8GT1/BDMV/index.bdmv
+Jan 19 06:09:29 raspberrypi org.gtk.Private.UDisks2VolumeMonitor[746]: index_parse.c:191: indx_parse(): error opening /media/root/SONY_8GT1/BDMV/BACKUP/index.bdmv
+Jan 19 06:10:58 raspberrypi rsyslogd-2007: action 'action 17' suspended, next retry is Fri Jan 19 06:11:28 2018 [try http://www.rsyslog.com/e/2007 ]
+Jan 19 06:17:01 raspberrypi rsyslogd-2007: action 'action 17' suspended, next retry is Fri Jan 19 06:17:31 2018 [try http://www.rsyslog.com/e/2007 ]
+Jan 19 06:17:01 raspberrypi CRON[1105]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Jan 19 06:19:03 raspberrypi rsyslogd-2007: action 'action 17' suspended, next retry is Fri Jan 19 06:19:33 2018 [try http://www.rsyslog.com/e/2007 ]
+Jan 19 06:20:08 raspberrypi rsyslogd-2007: action 'action 17' suspended, next retry is Fri Jan 19 06:20:38 2018 [try http://www.rsyslog.com/e/2007 ]
+Jan 19 06:21:00 raspberrypi rsyslogd-2007: action 'action 17' suspended, next retry is Fri Jan 19 06:21:30 2018 [try http://www.rsyslog.com/e/2007 ]
+Jan 19 06:22:14 raspberrypi rsyslogd-2007: action 'action 17' suspended, next retry is Fri Jan 19 06:22:44 2018 [try http://www.rsyslog.com/e/2007 ]
+Jan 19 06:24:00 raspberrypi systemd[1]: Starting Cleanup of Temporary Directories...
+Jan 19 06:24:00 raspberrypi rsyslogd-2007: action 'action 17' suspended, next retry is Fri Jan 19 06:24:30 2018 [try http://www.rsyslog.com/e/2007 ]
+
+
+[root@alarmpi ~]# ./writeMACV2.sh
+Serial: b47e4c6c WiFi: b827eb2b1939 BT: b827ebd4e6c6 len 316 sizeof(cish) 12 total 328 OTP RAM Write: bit 3056: 0x50 0x4f 0x10 0x6 0xc6 0xe6 0xd4 0xeb bit 3120: 0x27 0xb8 Status:0
+ifconfig: SIOCSIFFLAGS: Input/output error
+
+
+
+* WiFi MAC address incorrectly programmed - b827eb90cd5f
+Serial: 5802e73c WiFi: b827eb57b269 BT: b827eba84d96
+vcgencmd otp_dump | grep 28: | cut -d ':' -f2
+
+
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Initializing cgroup subsys cpuset
+[    0.000000] Initializing cgroup subsys cpu
+[    0.000000] Initializing cgroup subsys cpuacct
+[    0.000000] Linux version 4.4.7-v7+ (dc4@dc4-XPS13-9333) (gcc version 4.9.3 (crosstool-NG crosstool-ng-1.22.0-88-g8460611) ) #876 SMP Tue Apr 12 22:28:41 BST 2016
+[    0.000000] CPU: ARMv7 Processor [410fd034] revision 4 (ARMv7), cr=10c5383d
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[    0.000000] Machine model: Raspberry Pi 3 Model B Rev 1.2
+[    0.000000] cma: Reserved 8 MiB at 0x36800000
+[    0.000000] Memory policy: Data cache writealloc
+[    0.000000] On node 0 totalpages: 225280
+[    0.000000] free_area_init_node: node 0, pgdat 808a9ec0, node_mem_map b6036000
+[    7.283063] brcmfmac: brcmf_c_preinit_dcmds: Firmware version = wl0: Dec 15 2015 18:10:45 version 7.45.41.23 (r606571) FWID 01-cc4eda9c
+[    7.309728] brcmfmac: brcmf_cfg80211_reg_notifier: not a ISO3166 code
+[    7.309804] sd 0:0:0:0: Attached scsi generic sg0 type 0
+[    7.310714] random: nonblocking pool is initialized
+[    7.562774] brcmfmac: brcmf_cfg80211_reg_notifier: not a ISO3166 code
+[    7.562802] cfg80211: World regulatory domain updated:
+[    7.562811] cfg80211:  DFS Master region: unset
+[    7.562820] cfg80211:   (start_freq - end_freq @ bandwidth), (max_antenna_gain, max_eirp), (dfs_cac_time)
+[    7.562836] cfg80211:   (2402000 KHz - 2472000 KHz @ 40000 KHz), (N/A, 2000 mBm), (N/A)
+[    7.562848] cfg80211:   (2457000 KHz - 2482000 KHz @ 40000 KHz), (N/A, 2000 mBm), (N/A)
+[    7.562860] cfg80211:   (2474000 KHz - 2494000 KHz @ 20000 KHz), (N/A, 2000 mBm), (N/A)
+[    7.562875] cfg80211:   (5170000 KHz - 5250000 KHz @ 80000 KHz, 160000 KHz AUTO), (N/A, 2000 mBm), (N/A)
+[    7.562898] cfg80211:   (5250000 KHz - 5330000 KHz @ 80000 KHz, 160000 KHz AUTO), (N/A, 2000 mBm), (0 s)
+[    7.562911] cfg80211:   (5490000 KHz - 5730000 KHz @ 160000 KHz), (N/A, 2000 mBm), (0 s)
+[    7.562923] cfg80211:   (5735000 KHz - 5835000 KHz @ 80000 KHz), (N/A, 2000 mBm), (N/A)
+[    7.562935] cfg80211:   (57240000 KHz - 63720000 KHz @ 2160000 KHz), (N/A, 0 mBm), (N/A)
+[    7.867835] systemd-journald[141]: Received request to flush runtime journal from PID 1
+[    8.207064] brcmfmac: brcmf_add_if: ERROR: netdev:wlan0 already exists
+[    8.207089] brcmfmac: brcmf_add_if: ignore IF event
+[    8.213269] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[    8.213334] brcmfmac: power management disabled
+[    9.275315] Adding 102396k swap on /var/swap.  Priority:-1 extents:5 across:1929212k SSFS
+[    9.448756] smsc95xx 1-1.1:1.0 eth0: hardware isn't capable of remote wakeup
+[    9.448887] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[   14.066643] FAT-fs (sda1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+[   68.409992] usb 1-1.5: USB disconnect, device number 6
+[   77.347538] usb 1-1.5: new high-speed USB device number 7 usi
+

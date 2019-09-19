@@ -1,0 +1,36 @@
+領域:りょういき:area
+軸:じく:axis
+不等号:ふとうごう:inequality sign
+該当:がいとう:applicable, corresponding
+進数:しんすう:base (n base)
+桁:けた:digit
+値:あたい:value
+装置:そうち:equipment, apparatus
+計算:けいさん:calculation
+終了:しゅうりょう:completion, end
+結果:けっか:result
+全体:ぜんたい:whole, entirety
+公式:こうしき:formula
+確率:かくりつ:probability
+くじ:lottery
+数:かず: number (as amount)
+表現:ひょうげん: expression, presentation
+組合せ:くみあわせ:combination
+代金:だいきん:cost,charging
+分割払い:ぶんかつばらい:taksit
+購入:こうにゅう:purchase
+支払い:しはらい:payment
+均等に:きんとうに:equally
+額:がく:amount (of money)
+仮定:かてい:assumption
+それぞれ:each one, respectively
+均等に:きんとうに:equally
+契約:けいやく:contract, agreement
+総額:そうがく:total amount
+直前:ちょくぜん:just before
+利息:りそく:faiz, interest
+割合:わりあい:ratio
+比率:ひりつ:percentage
+水溶液:すいようえき:aqueous solution
+図形:ずけい:figure
+面積:めんせき:area

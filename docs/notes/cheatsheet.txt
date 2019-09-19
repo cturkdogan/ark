@@ -1,0 +1,77 @@
+jlpt pz992g8
+sicil no 0011441261
+
+4986825681550000
+08/24
+0000328
+
+JAVA_HOME=C:\Program Files\Java\jdk1.8.0_161;M2_HOME=C:\Program Files\apache-maven-3.5.3;M2=%M2_HOME%\bin
+
+gslb-sen.noc.sony.co.jp
+ping wpad
+http://wpad.gslb-sen.noc.sony.co.jp/wpad.dat
+
+npm -g config set proxy http://proxy-sen.noc.sony.co.jp:10080
+npm -g config set https-proxy http://proxy-sen.noc.sony.co.jp:10080
+npm config list
+
+Procfile for heroku
+:::term
+web:    java $JAVA_OPTS -jar target/dependency/webapp-runner.jar --port $PORT target/*.war
+
+tar -czvf archive.tar.gz /home/ubuntu --exclude=*.mp4
+tar -xzvf archive.tar.gz -C /tmp
+-c: Create an archive.
+-x: extract an archive
+-z: Compress the archive with gzip.
+-v: Display progress in the terminal while creating the archive, also known as gverboseh mode. The v is always optional in these commands, but itfs helpful.
+-f: Allows you to specify the filename of the archive.
+
+crontab -e #edit
+crontab -‚Œ #list
+crontab -i #remove with consent
+# minute hour day month dayoftheweek command
+
+ip 43.26.34.240
+cd Users\0011441261\Documents\Turkdogan_Cagdas_Backup\IdeaProjects\pireport>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

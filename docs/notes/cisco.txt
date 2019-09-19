@@ -1,0 +1,96 @@
+#### cisco cheatsheet
+#layer 2 information using cisco discovery protocol which must be enabled beforehand
+show cdp interface
+show cdp neighbors
+#for troubleshooting
+show cdp traffic
+show running-config
+show startup-config
+#configuration
+conf t
+show version
+show flash
+#Creating a Software Image Backup
+copy flash: tftp:
+#Upgrading the Image from the Network
+copy tftp: flash:
+#backup running configuration
+copy running-config tftp:
+#copy running confguration from network
+copy tftp: running-config
+#copy running configuration to startup configuration
+copy running-config startup-config
+#monitoring
+term mon
+#debug
+deb ip icmp
+show proc 
+show processes cpu history
+#Security device manager
+ip http server
+ip http secure-server
+ip http authentication local
+#remote conn
+sh sessions
+sh users
+sh ssh
+clear line 1
+# suspend a session ctrl shift 6 x
+#help
+?
+#switching to privilige users
+enable
+#invoke setup mode
+setup
+#global configuration mode
+configure terminal
+#entering the fast Ethernet interface on slot 0, port 1
+interface FastEthernet 0/1
+# give the switch a name
+conf t
+hostname OSKSW1
+# setup vlan
+vlan 10
+name Management
+exi
+int vlan 10
+ip address 192.168.0.10 255.255.255.0
+#display mac address table
+sho mac-address-table
+#show details of an interface
+sho int gi 1/0/2
+#password related
+no aaa new-model
+line console 0
+login
+#% Login disabled on line 0, until 'password' is set
+password cisco
+exi
+line vty 0 4
+login
+#% Login disabled on line 2, until 'password' is set
+#% Login disabled on line 3, until 'password' is set
+#% Login disabled on line 4, until 'password' is set
+#% Login disabled on line 5, until 'password' is set
+#% Login disabled on line 6, until 'password' is set
+password sanjose
+exi
+enable password cisco
+enable secret sanfran
+#enable encryption
+service password-encryption
+#disable encryption
+no service password-encryption
+#configuring port security
+interface fa0/5
+switchport mode access
+switchport port-security
+switchport port-security maximum 1
+switchport port-security mac-address sticky
+switchport port-security violation shutdown
+
+
+
+ 
+
+
