@@ -120,6 +120,7 @@
 抵抗値:ていこうち：resistance value
 脱落日:だつらくび: defect date
 修理日:しゅうりび:repair date
+脱落日:だつらくび:drop-out (register) date
 関連する:かんれんする：related
 硬い:かたい：hard
 柔らかい:やわらかい：soft
@@ -193,4 +194,8 @@
 見込:みこみ:forecast
 今後:こんご:from now on
 改修:かいしゅう:improvement, renovation
-
+設備	せつび: equipment; device; facilities; installation;
+退職証明書:たいしょくしょうめいしょ:retirement certificate
+採用通知書:さいようつうちしょ:recruitment notice
+終了日:しゅうりょうび:end date
+開始日:かいしび: start date

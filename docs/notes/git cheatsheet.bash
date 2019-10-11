@@ -17,8 +17,9 @@ git add <filename>
 git add *
 #commit these changes to the Head
 git commit -m "Commit message"
+#add remote repository 
+git remote add origin https://github.com/cturkdogan/inzd.git
 #push the changes to remote repository
-git remote add origin 
 git push origin master https://github.com/cturkdogan/inzd.git
 #create a new branch named "feature_x" and switch to it using
 git checkout -b feature_x
