@@ -34,3 +34,38 @@ npm install -g npm@latest
 node --version
 
 
+npm install --dev
+
+heroku config:set NPM_CONFIG_PRODUCTION=false
+
+
+{
+        effect:'none',
+        slices:15,
+        boxCols:8,
+        boxRows:8,
+        animSpeed:500,
+        pauseTime:4000,
+        directionNav:false,
+        directionNavHide:false,
+        controlNav:false,
+        captionOpacity:1
+    }
+	
+	
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d575.6918754180722!2d137.06156666477204!3d35.29094509772096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60036bf69e9bbd3f%3A0xc95bc59c1c6bab04!2s5+Chome-5-4+Ishiodai%2C+Kasugai-shi%2C+Aichi-ken+487-0006!5e0!3m2!1sen!2sjp!4v1549944559249" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+
+setTimeout(function () {
+        $('.hiddenDiv').show('fast', function () {
+            $(this).append('<iframe frameborder="0" style="border:0" src="https://maps.google.com/maps?output=embed&iwloc&z=12&t=p&q=Bangalore India"></iframe>');
+        });
+    }, 1000);
+	
+celcius degrees &#8451
+
+JPC00169789.jp.sony.com:3000
+
+npm install --save react-pivottable react-plotly.js plotly.js react react-dom
+
+npm update caniuse-lite browserslist

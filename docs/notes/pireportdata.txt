@@ -241,3 +241,81 @@ window.onload = function () {
   let testeOptions = [0, 10, 20];
   selectOptionsClass('select-teste', testeOptions);
 }
+
+"3V3 Check">3V3 Check</option>
+"MAC Script Fail">MAC Script Fail</option>
+"LED Check Active LED">LED Check Active LED</option>
+"Stress Volt Fail">Stress Volt Fail</option>
+"WIFI Up COM READ">WIFI Up COM READ</option>
+"USB Fault Ethernet Fault">USB Fault Ethernet Fault</option>
+"Boot Check Comms Timeout">Boot Check Comms Timeout</option>
+"WIFI CONNECT">WIFI CONNECT</option>
+"MAC Adaptor Not Found">MAC Adaptor Not Found</option>		
+"Stress Volt COM READ Fail">Stress Volt COM READ Fail</option>
+"LED Check Speed LED">LED Check Speed LED</option>
+"GPIO 45 Fail">GPIO 45 Fail</option>
+"COMP&AUD">COMP&AUD</option>
+"Audio Fail - Right Vpp">Audio Fail - Right Vpp</option>
+'COMP&AUDIO Fail Comp Check'>COMP&AUDIO Fail Comp Check</option>
+'HDMI Red Fail'>HDMI Red Fail</option>
+'No HDMI Picture'>No HDMI Picture</option>
+'Ethernet Fail'>Ethernet Fail</option>
+"Audio Fail - Left Freq">Audio Fail - Left Freq</option>
+
+<option value=""></option>
+			  <option value="1V8 Check">1V8 Check</option>
+			  <option value="3V3 Check">3V3 Check</option>
+			  <option value="MAC Script Fail">MAC Script Fail</option>
+			  <option value="LED Check Active LED">LED Check Active LED</option>
+			  <option value="Stress Volt Fail">Stress Volt Fail</option>
+			  <option value="WIFI Up COM READ">WIFI Up COM READ</option>
+			  <option value="USB Fault Ethernet Fault">USB Fault Ethernet Fault</option>
+			  <option value="Boot Check Comms Timeout">Boot Check Comms Timeout</option>
+			  <option value="WIFI CONNECT">WIFI CONNECT</option>
+			  <option value="MAC Adaptor Not Found">MAC Adaptor Not Found</option>		
+			  <option value="Stress Volt COM READ Fail">Stress Volt COM READ Fail</option>
+			  <option value="LED Check Speed LED">LED Check Speed LED</option>
+			  <option value="GPIO 45 Fail">GPIO 45 Fail</option>
+			  <option value="COMP&AUD">COMP&AUD</option>
+			  <option value="Audio Fail - Right Vpp">Audio Fail - Right Vpp</option>
+			  <option value='COMP&AUDIO Fail Comp Check'>COMP&AUDIO Fail Comp Check</option>
+			  <option value='HDMI Red Fail'>HDMI Red Fail</option>
+			  <option value='No HDMI Picture'>No HDMI Picture</option>
+			  <option value='Ethernet Fail'>Ethernet Fail</option>
+			  <option value="Audio Fail - Left Freq">Audio Fail - Left Freq</option>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
