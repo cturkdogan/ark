@@ -15,6 +15,8 @@ git clone cturkdogan@github.com/cturkdogan/inzd.git:C:\workspace\inzossapp
 #add changes to the Index
 git add <filename>
 git add *
+#clean repository
+git rm -r --cached .
 #commit these changes to the Head
 git commit -m "Commit message"
 #add remote repository 
