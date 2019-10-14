@@ -23,6 +23,8 @@ git commit -m "Commit message"
 git remote add origin https://github.com/cturkdogan/inzd.git
 #push the changes to remote repository
 git push origin master https://github.com/cturkdogan/inzd.git
+#push the changes to remote repository --changes will be lost on remote!!
+git push --force origin master https://github.com/cturkdogan/inzd.git
 #create a new branch named "feature_x" and switch to it using
 git checkout -b feature_x
 #switch back to master
