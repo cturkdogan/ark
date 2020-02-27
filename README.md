@@ -7,4 +7,4 @@
  Project Ark aims to create a universal movement to liberate Souls by providing methods and tools to gain self-knowledge and self-consciousness.
 # IV Scope of Work
 # V Deliverables
- a. Freedom
+ Freedom
